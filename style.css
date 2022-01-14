@@ -1,4 +1,98 @@
-/* influencer journey styles  */
-.influencer-info{
+
+/*--------------
+ main font start
+-------------- */
+/* google font  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+main{
     display: flex;
+    flex-direction: column;
+    align-items: center;
+ 
+}
+/*-------------------------
+   influencer journey styles 
+ --------------------------- */
+ .influencer-container{
+     margin-bottom: 100px;
+ }
+.influencer-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 88px;
+    align-items: center;
+    margin-left: 165px;
+}
+
+.influencer-title>h1{
+      font-size: 52px;
+      font-weight: 700;
+      margin-bottom: 15px;
+      
+}
+.influencer-details p{
+    padding-bottom: 20px;
+
+}
+
+.influecner-button {
+    text-decoration: none;
+    background-color: rgb(155, 40, 78);
+    color: white;
+    font-weight: 550;
+    border-radius:  41px;
+    padding: 10px 25px;
+    transition: 0.5s;
+
+}
+.influecner-button:hover{
+ background-color: rebeccapurple;
+}
+.main-camera {
+    width: 440px;
+    height: 414px;
+}
+/*-----------------
+  logos styles 
+---------------- */
+.logos{
+   display: grid;
+   grid-template-columns: repeat(7,1fr);
+    margin-top: 35px;
+    margin-bottom: 35px;
+    align-items: center;
+}
+/*----------------------------
+ popular collection styles 
+----------------------------- */
+h2{
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    color: #3A3A3A;
+}
+
+.collections{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 20px;
+
+}
+
+
+
+
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color:  #FFC014;
+}
+.fa-star.empty{
+    color:  #AEAEAE;
 }
