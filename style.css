@@ -159,7 +159,7 @@ footer{
     background: #0A0826;
     color: white;
    text-align: center;
-    height: 239px;
+    width: 100%;
     
     
 }
@@ -211,4 +211,53 @@ font-weight: bold;
     text-decoration: none;
     color: #328f8a;
     font-weight: 500;
+}
+/*------------------------------
+    mobile devices responsive 
+-------------------------------- */
+@media only screen and (max-width:688px) {
+    .menu{
+        display: none;
+    }
+    .nav-title {
+        text-align: center;
+    }
+
+    
+     /* Logo section  */
+  .logo-container {
+    width: 100%;
+    text-align: center;
+  }
+  .logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .logos .logo {
+    margin-bottom: 10px;
+  }
+      
+    .influencer-info{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* Popular section  */
+     .collections{
+        grid-template-columns: repeat(1,1fr);
+        align-items: center;
+        margin-left: 130px;
+        
+    }
+    .collection{
+        padding: 35px;
+    } 
+    /* login section  */
+    .login-container{
+        margin-left: 80px;
+    }
+    /* footer section  */
+    footer{
+        
+        padding-right: 100px;
+    }
+ 
 }
