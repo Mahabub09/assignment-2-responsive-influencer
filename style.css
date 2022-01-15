@@ -113,6 +113,12 @@ nav li{
     border-radius: 5px;
     padding: 14px 14px;
 }
+.collection-img img {
+    transition: all ease-in-out 0.3s;
+  }
+.collection-img:hover img {
+    transform: scale(0.8);
+  }
 
 .collection-details h2 {
     font-weight: 600;
@@ -187,11 +193,13 @@ font-weight: bold;
     border-radius: 5px;
     padding: 14px 14px;
     padding: 20px 20px;
+    margin-top: 150px;
 }
 .login-form{
     display: flex;
     flex-direction: column;
     text-align: center;
+    
 }
 .login-form h2{
     font-weight: 700;
@@ -239,12 +247,15 @@ font-weight: bold;
       
     .influencer-info{
         grid-template-columns: repeat(1,1fr);
+        margin-left: 70px;
+        justify-content: center;
     }
+    
     /* Popular section  */
      .collections{
         grid-template-columns: repeat(1,1fr);
         align-items: center;
-        margin-left: 130px;
+        margin-left: 120px;
         
     }
     .collection{
@@ -252,12 +263,34 @@ font-weight: bold;
     } 
     /* login section  */
     .login-container{
-        margin-left: 80px;
+        margin-left: 100px;
+        margin-top: 20px;
     }
     /* footer section  */
     footer{
         
-        padding-right: 100px;
+        padding-right: 110px;
     }
+    footer h3,p {
+        padding-left: 100px;
+
+    }
+   .social-icons a{
+       margin-left: 30px;
+   }
  
+}
+/* tablet responsive  */
+@media only screen and (min-width:689px)  and (max-width: 992px) {
+    
+    .collections{
+        grid-template-columns: repeat(2,1fr);
+    }
+    footer{
+        padding-right: 50px;
+    }
+    footer h3,p {
+        padding-left: 50px;
+
+    }
 }
