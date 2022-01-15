@@ -69,30 +69,86 @@ main{
 /*----------------------------
  popular collection styles 
 ----------------------------- */
-h2{
+.main-title{
     text-align: center;
     font-weight: 600;
     font-size: 28px;
     color: #3A3A3A;
 }
-
-.collections{
+.collections {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 24px;
-    grid-row-gap: 20px;
-
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+  }
+.collection{
+    box-shadow: 10px 10px 20px  rgb(201, 199, 199);
+    border-radius: 5px;
+    padding: 14px 14px;
 }
 
-
-
-
-.fa-star{
-    font-size: 12px;
+.collection-details h2 {
+    font-weight: 600;
+    font-size: 28px;
+    
+  }
+  .price {
+    font-size: 24px;
+    font-weight: 10;
+    margin-top:-10px;
+   
+   
+  }
+ .collection-info p {
+    font-size: 14px;
+    opacity: 0.7;
+  } 
+  .fa-star.filled {
+    color: #ffc014;
+  }
+  .rating {
+    font-size: 14px;
+  }
+/*-------------------
+   see more button 
+------------------ */
+.see-more{
+    text-align: right;
+    margin-top: 50px;
+    
 }
-.fa-star.filled{
-    color:  #FFC014;
+
+.see-more a{
+    text-decoration: none;
+    color: rgb(155, 40, 78) ;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
 }
-.fa-star.empty{
-    color:  #AEAEAE;
+/*-------------
+  footer style 
+------------ */
+footer{
+    background: #0A0826;
+    color: white;
+   text-align: center;
+    height: 239px;
+    
+    
+}
+footer h3{
+    font-size: 24px;
+line-height: 36px;
+padding-top: 25px;
+}
+footer p{
+    color: #D9DBE1;
+    font-size: 14px;
+line-height: 14px;
+font-weight: bold;
+}
+.social-icons a{
+    padding-left: 16px;
+    font-size: 25px;
+    color: white;
 }
