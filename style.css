@@ -179,3 +179,36 @@ font-weight: bold;
     font-size: 25px;
     color: white;
 }
+/*------------------
+  login form styles 
+--------------------- */
+.login-container{
+    box-shadow: 10px 10px 20px   rgb(201, 199, 199);
+    border-radius: 5px;
+    padding: 14px 14px;
+    padding: 20px 20px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.login-form h2{
+    font-weight: 700;
+    color:#328f8a ;
+}
+.login-form input, button {
+    font-size: 1.2em;
+    margin-top: 15px;
+    border: 1px solid lightgray;
+    padding: 20px 20px;
+}
+.login-form button{
+    color: white;
+    background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+}
+.login-form a{
+    text-decoration: none;
+    color: #328f8a;
+    font-weight: 500;
+}
