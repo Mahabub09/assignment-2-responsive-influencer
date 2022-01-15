@@ -14,6 +14,29 @@ main{
     align-items: center;
  
 }
+/* navbar styles  */
+.container-navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+.menu ul {
+    display: flex;
+
+}
+nav li{
+    list-style: none;
+    margin-right: 2em;
+    
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+
+}
 /*-------------------------
    influencer journey styles 
  --------------------------- */
@@ -55,6 +78,10 @@ main{
 .main-camera {
     width: 440px;
     height: 414px;
+}
+.main-camera:hover .camera{
+    transform: rotate(360deg);
+    transition: transform 2s ease-in-out;
 }
 /*-----------------
   logos styles 
